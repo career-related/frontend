@@ -13,6 +13,8 @@ RUN npm run build
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/configfile.template
 
+RUN mkdir -p /usr/share/nginx/data
+ADD data/amazon-filter.json /usr/share/nginx/data/
 COPY --from=build /app/build /usr/share/nginx/html
 
 ENV PORT 8080

@@ -1,0 +1,8 @@
+{
+    "jobs": [
+        {"company": "Ammazon", "title": "j1", "count": 10},
+        {"company": "Apple", "title": "j1", "count": 20},
+        {"company": "Amazon", "title": "j1", "count": 10},
+        {"company": "Meta", "title": "j2", "count": 5}
+    ]
+}
